@@ -107,8 +107,12 @@ def check_accessibility():
         ("alt=", "Image alt attributes"),
         ("aria-label", "ARIA labels"),
         ("lang=", "Language attribute"),
-        ("<h1>", "Heading structure"),
-        ("role=", "ARIA roles")
+        ("<h1>", "Heading structure (h1)"),
+        ("<h2", "Heading structure (h2)"),
+        ("role=", "ARIA roles"),
+        ("aria-labelledby", "ARIA labelledby"),
+        ("aria-hidden", "ARIA hidden"),
+        ("loading=", "Image loading attributes")
     ]
     
     for check, description in accessibility_checks:
@@ -116,6 +120,59 @@ def check_accessibility():
             print(f"✅ {description} found")
         else:
             print(f"⚠️ {description} not found")
+
+def check_seo():
+    """Check SEO optimization."""
+    print("\n🔍 SEO Check:")
+    
+    with open("index.html", 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    seo_checks = [
+        ("og:", "Open Graph tags"),
+        ("twitter:", "Twitter Card tags"),
+        ("canonical", "Canonical URL"),
+        ("hreflang", "Language alternatives"),
+        ("application/ld+json", "Structured data"),
+        ("manifest.json", "PWA manifest"),
+        ("description", "Meta description")
+    ]
+    
+    for check, description in seo_checks:
+        if check in content:
+            print(f"✅ {description} found")
+        else:
+            print(f"⚠️ {description} not found")
+
+def check_performance():
+    """Check performance optimizations."""
+    print("\n⚡ Performance Check:")
+    
+    with open("index.html", 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    performance_checks = [
+        ("preload", "Resource preloading"),
+        ("loading=", "Image lazy loading"),
+        ("rel=\"noopener\"", "Secure external links"),
+        ("defer", "Script deferring"),
+        ("async", "Async scripts")
+    ]
+    
+    for check, description in performance_checks:
+        if check in content:
+            print(f"✅ {description} found")
+        else:
+            print(f"⚠️ {description} not found")
+    
+    # Check for external dependencies
+    external_deps = ["googleapis.com", "cdnjs.cloudflare.com", "fonts.gstatic.com"]
+    has_external = any(dep in content for dep in external_deps)
+    
+    if not has_external:
+        print("✅ No external dependencies found")
+    else:
+        print("⚠️ External dependencies detected")
 
 def main():
     """Main optimization and validation function."""
@@ -129,6 +186,8 @@ def main():
     check_file_sizes()
     html_valid = validate_html()
     check_accessibility()
+    check_seo()
+    check_performance()
     
     # Summary
     print("\n" + "=" * 50)
@@ -145,11 +204,15 @@ def main():
     print("• Test with screen readers")
     print("• Validate with real HTML5 validator")
     print("• Run Lighthouse performance audit")
+    print("• Test dark mode functionality")
+    print("• Verify PWA installation")
     
     print("\n🌐 Test your site:")
     print("• Local: http://localhost:8000")
     print("• HTML Validator: https://validator.w3.org/")
     print("• Accessibility: https://wave.webaim.org/")
+    print("• PWA: Chrome DevTools > Application > Manifest")
+    print("• Performance: Chrome DevTools > Lighthouse")
 
 if __name__ == "__main__":
     main()

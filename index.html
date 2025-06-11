@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iren Trofimova | Psychology Consultant</title>
     <meta name="description" content="Professional psychology consultant offering personalized therapy services for mental health and well-being.">
+    <meta name="keywords" content="psychology consultant, therapy, mental health, counseling, individual therapy, couples counseling">
+    <meta name="author" content="Iren Trofimova">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://therapy-site.com/">
+    <meta property="og:title" content="Iren Trofimova | Psychology Consultant">
+    <meta property="og:description" content="Professional psychology consultant offering personalized therapy services for mental health and well-being.">
+    <meta property="og:image" content="https://therapy-site.com/images/profile.jpg">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://therapy-site.com/">
+    <meta property="twitter:title" content="Iren Trofimova | Psychology Consultant">
+    <meta property="twitter:description" content="Professional psychology consultant offering personalized therapy services for mental health and well-being.">
+    <meta property="twitter:image" content="https://therapy-site.com/images/profile.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://therapy-site.com/">
+    <link rel="alternate" hreflang="en" href="https://therapy-site.com/">
+    <link rel="alternate" hreflang="uk" href="https://therapy-site.com/index_uk.html">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
     <link rel="icon" type="image/png" href="images/favicon/favicon-48x48.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
     
     <!-- Preload critical assets -->
     <link rel="preload" href="images/profile.jpg" as="image">
@@ -37,28 +63,28 @@
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
-            <nav class="language-nav">
-                <a href="index_uk.html" class="lang-link" aria-label="Switch to Ukrainian">
+            <nav class="language-nav" role="navigation" aria-label="Language selection">
+                <a href="index_uk.html" class="lang-link" aria-label="Switch to Ukrainian" hreflang="uk">
                     🇺🇦 Українська
                 </a>
             </nav>
             
             <div class="profile">
-                <img src="images/profile.jpg" alt="Iren Trofimova" class="profile-image">
+                <img src="images/profile.jpg" alt="Professional headshot of Iren Trofimova, Psychology Consultant" class="profile-image" loading="eager">
                 <div class="profile-info">
                     <h1 class="name">Iren Trofimova</h1>
-                    <p class="title">Psychology Consultant</p>
+                    <p class="title" role="doc-subtitle">Psychology Consultant</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <main id="main" class="main">
-        <section class="about">
+    <main id="main" class="main" role="main">
+        <section class="about" aria-labelledby="about-heading">
             <div class="container">
-                <h2>About Me</h2>
+                <h2 id="about-heading">About Me</h2>
                 <div class="about-content">
                     <p>Hi, I'm Iren Trofimova, a dedicated psychology consultant with over a decade of experience helping individuals and couples navigate life's challenges.</p>
                     <p>My approach to therapy is holistic, focusing on emotional resilience and well-being. I offer personalized care tailored to your unique needs in a safe, non-judgmental environment.</p>
@@ -66,22 +92,22 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" aria-labelledby="services-heading">
             <div class="container">
-                <h2>Services</h2>
-                <div class="services-grid">
-                    <article class="service">
-                        <div class="service-icon">👤</div>
+                <h2 id="services-heading">Services</h2>
+                <div class="services-grid" role="list">
+                    <article class="service" role="listitem">
+                        <div class="service-icon" aria-hidden="true">👤</div>
                         <h3>Individual Therapy</h3>
                         <p>Personalized one-on-one sessions to help you overcome challenges and improve mental health.</p>
                     </article>
-                    <article class="service">
-                        <div class="service-icon">👥</div>
+                    <article class="service" role="listitem">
+                        <div class="service-icon" aria-hidden="true">👥</div>
                         <h3>Group Therapy</h3>
                         <p>Supportive group settings where shared experiences foster healing and growth.</p>
                     </article>
-                    <article class="service">
-                        <div class="service-icon">💕</div>
+                    <article class="service" role="listitem">
+                        <div class="service-icon" aria-hidden="true">💕</div>
                         <h3>Couples Counseling</h3>
                         <p>Strengthen relationships through improved communication and deeper connection.</p>
                     </article>
@@ -89,10 +115,10 @@
             </div>
         </section>
 
-        <section class="credentials">
+        <section class="credentials" aria-labelledby="credentials-heading">
             <div class="container">
-                <div class="credentials-icon">🏆</div>
-                <h2>Professional Credentials</h2>
+                <div class="credentials-icon" aria-hidden="true">🏆</div>
+                <h2 id="credentials-heading">Professional Credentials</h2>
                 <p>Certified member of leading psychological associations with advanced qualifications in specialized therapeutic techniques.</p>
                 <ul class="credentials-list">
                     <li>Certified Clinical Psychologist</li>
@@ -102,16 +128,16 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" aria-labelledby="contact-heading">
             <div class="container">
-                <h2>Get in Touch</h2>
+                <h2 id="contact-heading">Get in Touch</h2>
                 <div class="contact-links">
-                    <a href="https://t.me/Iren_Tro" class="contact-link" target="_blank" rel="noopener">
-                        <span class="contact-icon">📱</span>
+                    <a href="https://t.me/Iren_Tro" class="contact-link" target="_blank" rel="noopener" aria-label="Contact via Telegram">
+                        <span class="contact-icon" aria-hidden="true">📱</span>
                         <span class="contact-text">Telegram</span>
                     </a>
-                    <a href="tel:+380636617040" class="contact-link">
-                        <span class="contact-icon">📞</span>
+                    <a href="tel:+380636617040" class="contact-link" aria-label="Call phone number">
+                        <span class="contact-icon" aria-hidden="true">📞</span>
                         <span class="contact-text">Phone</span>
                     </a>
                 </div>

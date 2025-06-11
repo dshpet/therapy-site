@@ -48,6 +48,11 @@ select {
     --color-white: #ffffff;
     --color-border: #e9ecef;
     
+    /* Dark mode colors */
+    --color-bg-dark: #1a1a1a;
+    --color-text-dark: #e5e5e5;
+    --color-text-light-dark: #b0b0b0;
+    
     /* Typography */
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     --font-size-xs: 0.75rem;
@@ -386,6 +391,44 @@ button:focus {
     outline-offset: 2px;
 }
 
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-white: var(--color-bg-dark);
+        --color-text: var(--color-text-dark);
+        --color-text-light: var(--color-text-light-dark);
+        --color-secondary: #2a2a2a;
+        --color-accent: #1e3a1e;
+        --color-border: #404040;
+    }
+    
+    .header {
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --color-primary: #000000;
+        --color-text: #000000;
+        --color-white: #ffffff;
+        --color-border: #000000;
+    }
+}
+
 /* Print Styles */
 @media print {
     .language-nav,
@@ -400,5 +443,9 @@ button:focus {
     
     .profile-image {
         border: 2px solid var(--color-text);
+    }
+    
+    * {
+        box-shadow: none !important;
     }
 }
