@@ -1,103 +1,128 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Професійний консультант з психології, що надає послуги в сфері психічного здоров'я та благополуччя." />
-
-  <title>Психолог | Іра Трофімова</title>
-
-  <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Include Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-..."
-    crossorigin="anonymous"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іра Трофімова | Психолог-консультант</title>
+    <meta name="description" content="Професійний психолог-консультант, що надає персоналізовані послуги терапії для психічного здоров'я та благополуччя.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-48x48.png">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/profile.jpg" as="image">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Іра Трофімова",
+      "jobTitle": "Психолог-консультант",
+      "description": "Професійний психолог-консультант, що надає персоналізовані послуги терапії.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+380636617040",
+        "contactType": "Customer Service",
+        "availableLanguage": ["English", "Ukrainian"]
+      }
+    }
+    </script>
 </head>
 
 <body>
-  <!-- Language Switcher -->
-  <div class="language-switcher">
-    <a href="index.html">English</a>
-  </div>
-  <!-- Header Section -->
-  <header>
-    <div class="container">
-      <img src="images/profile.jpg" alt="Profile Picture">
-      <h1>Іра Трофімова</h1>
-      <h2>Психолог</h2>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- About Me Section -->
-    <section id="about-me">
-      <div class="container">
-        <h2>Про мене</h2>
-        <p>Потужний психолог. Тут буде пізніше усе</p>
-      </div>
-    </section>
-
-    <!-- Services Offered -->
-    <section id="services">
-      <div class="container">
-        <h2>Що я можу</h2>
-        <!-- Service Items -->
-        <div class="services-grid">
-          <!-- Repeat for each service -->
-          <div class="service-item">
-            <img src="images/service-placeholder.jpg" alt="Service Image">
-            <h3>Такі штуки</h3>
-            <p>Потужно консультую</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Accreditations -->
-    <section id="accreditations">
-      <div class="container">
-        <h2>Аккредитації</h2>
-        <!-- Logos or List -->
-        <ul>
-          <li>Аккредитація 1</li>
-          <li>Аккредитація 2</li>
-          <li>Аккредитація 3</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Contacts -->
-    <section id="contact">
+    <a href="#main" class="skip-link">Перейти до основного контенту</a>
+    
+    <header class="header">
         <div class="container">
-          <h2>Контакти</h2>
-          <div class="messenger-links">
-            <a href="https://t.me/Iren_Tro" target="_blank">
-              <i class="fab fa-telegram fa-3x"></i>
-            </a>
-            <a href="viber://chat?number=%2Byournumber" target="_blank">
-              <i class="fab fa-viber fa-3x"></i>
-            </a>
-            <a href="https://wa.me/yournumber" target="_blank">
-              <i class="fab fa-whatsapp fa-3x"></i>
-            </a>
-            <a href="https://signal.me/#p/+yournumber" target="_blank">
-              <i class="fas fa-signal fa-3x"></i>
-            </a>
-          </div>
+            <nav class="language-nav">
+                <a href="index.html" class="lang-link" aria-label="Switch to English">
+                    🇺🇸 English
+                </a>
+            </nav>
+            
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Іра Трофімова" class="profile-image">
+                <div class="profile-info">
+                    <h1 class="name">Іра Трофімова</h1>
+                    <p class="title">Психолог-консультант</p>
+                </div>
+            </div>
         </div>
-      </section>
-      
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Іра Трофімова. Усе в порядку.</p>
-      <!-- Footer Links -->
-      <a href="#">Політика приватності</a> | <a href="#">Інші штуки</a>
-    </div>
-  </footer>
+    </header>
+
+    <main id="main" class="main">
+        <section class="about">
+            <div class="container">
+                <h2>Про мене</h2>
+                <div class="about-content">
+                    <p>Привіт, я Іра Трофімова, відданий психолог-консультант з понад десятирічним досвідом допомоги людям та парам у подоланні життєвих викликів.</p>
+                    <p>Мій підхід до терапії є цілісним, зосереджений на емоційній стійкості та благополуччі. Я пропоную персоналізовану допомогу, адаптовану до ваших унікальних потреб у безпечному, неосуджувальному середовищі.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Послуги</h2>
+                <div class="services-grid">
+                    <article class="service">
+                        <div class="service-icon">👤</div>
+                        <h3>Індивідуальна терапія</h3>
+                        <p>Персоналізовані індивідуальні сесії для подолання викликів та покращення психічного здоров'я.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon">👥</div>
+                        <h3>Групова терапія</h3>
+                        <p>Підтримуючі групові заняття, де спільний досвід сприяє зціленню та зростанню.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon">💕</div>
+                        <h3>Консультування пар</h3>
+                        <p>Зміцнення стосунків через покращення комунікації та глибший зв'язок.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="credentials">
+            <div class="container">
+                <div class="credentials-icon">🏆</div>
+                <h2>Професійні кваліфікації</h2>
+                <p>Сертифікований член провідних психологічних асоціацій з передовими кваліфікаціями у спеціалізованих терапевтичних техніках.</p>
+                <ul class="credentials-list">
+                    <li>Сертифікований клінічний психолог</li>
+                    <li>Член Європейської федерації психологічних асоціацій (EFPA)</li>
+                    <li>Магістр клінічної психології</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Зв'яжіться зі мною</h2>
+                <div class="contact-links">
+                    <a href="https://t.me/Iren_Tro" class="contact-link" target="_blank" rel="noopener">
+                        <span class="contact-icon">📱</span>
+                        <span class="contact-text">Telegram</span>
+                    </a>
+                    <a href="tel:+380636617040" class="contact-link">
+                        <span class="contact-icon">📞</span>
+                        <span class="contact-text">Телефон</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Іра Трофімова. Всі права захищені.</p>
+        </div>
+    </footer>
 </body>
 </html>

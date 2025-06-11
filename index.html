@@ -1,220 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iren Trofimova | Psychology Consultant</title>
+    <meta name="description" content="Professional psychology consultant offering personalized therapy services for mental health and well-being.">
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon/favicon-48x48.png" sizes="48x48" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="images/favicon/site.webmanifest" />
-
-    <!-- Structured Data (Schema.org) -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-48x48.png">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/profile.jpg" as="image">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Iren Trofimova",
       "jobTitle": "Psychology Consultant",
-      "url": "https://yourwebsite.com",
-      "image": "https://yourwebsite.com/images/profile.jpg",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Iren Trofimova Psychology LLC"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/yourprofile",
-        "https://t.me/Iren_Tro",
-        "https://wa.me/yournumber"
-      ],
       "description": "Professional psychology consultant offering personalized therapy services.",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+380636617040",
         "contactType": "Customer Service",
-        "areaServed": "Worldwide",
         "availableLanguage": ["English", "Ukrainian"]
       }
     }
     </script>
-
-    <!-- Alternate Languages -->
-    <link rel="alternate" href="https://yourwebsite.com/index_uk.html" hreflang="uk" />
-    <link rel="alternate" href="https://yourwebsite.com/index.html" hreflang="en" />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://yourwebsite.com/index.html" />
-
-    <!-- Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Psychology Consultant | Iren Trofimova</title>
-    <meta name="description"
-        content="Iren Trofimova is a professional psychology consultant offering personalized therapy services to improve mental health and well-being." />
-    <meta name="keywords" content="psychology consultant, therapy, mental health, counseling, Iren Trofimova" />
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Psychology Consultant | Iren Trofimova" />
-    <meta property="og:description"
-        content="Iren Trofimova offers personalized therapy services for mental health improvement." />
-    <meta property="og:image" content="https://yourwebsite.com/images/profile.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com/index.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-
-    <!-- Stylesheets -->
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Flag Icons CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
-        integrity="sha512-uvXdJud8WaOlQFjlz9B15Yy2Au/bMAvz79F7Xa6OakCl2jvQPdHD0hb3dEqZRdSwG4/sknePXlE7GiarwA/9Wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&display=swap"
-        rel="stylesheet" />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- Preload Critical Assets -->
-    <link rel="preload" href="images/profile.jpg" as="image" />
 </head>
 
 <body>
-    <!-- Skip Link for Accessibility -->
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <!-- Header Section -->
-    <header>
-        <div class="container header-container">
-            <!-- Language Switcher -->
-            <div class="language-switcher">
-                <a href="index_uk.html" aria-label="Switch to Ukrainian">
-                    <span class="fi fi-ua"></span> Українська
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="language-nav">
+                <a href="index_uk.html" class="lang-link" aria-label="Switch to Ukrainian">
+                    🇺🇦 Українська
                 </a>
-            </div>
-
-            <!-- Logo and Title -->
-            <div class="logo-title">
-                <img src="images/profile.jpg" alt="Profile Picture of Iren Trofimova, Psychology Consultant" />
-                <div class="title-text">
-                    <h1>Iren Trofimova</h1>
-                    <h2>Psychology Consultant</h2>
+            </nav>
+            
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Iren Trofimova" class="profile-image">
+                <div class="profile-info">
+                    <h1 class="name">Iren Trofimova</h1>
+                    <p class="title">Psychology Consultant</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- About Me Section -->
-        <section id="about-me">
-            <div class="container about-me-container">
-              <h2>About Me</h2>
-              <p>
-                Hi, I’m Iren Trofimova, a dedicated and compassionate psychology consultant with over a decade of experience helping individuals and couples navigate life’s challenges. My approach to therapy is holistic, focusing on the mind, body, and spirit to foster emotional resilience and well-being. Whether you’re dealing with anxiety, depression, relationship issues, or simply seeking a better sense of balance, I offer personalized care tailored to your unique needs.
-              </p>
-              <p>
-                Together, we’ll work towards empowering you to heal, grow, and thrive. My goal is to create a safe, non-judgmental space where you can explore your thoughts and emotions, and I’m here to guide you every step of the way.
-              </p>
-            </div>
-          </section>          
-
-        <!-- Services Offered -->
-        <section id="services">
+    <main id="main" class="main">
+        <section class="about">
             <div class="container">
-                <h2>Services Offered</h2>
-                <!-- Service Items -->
-                <section id="services">
-                    <div class="container">
-                        <div class="services-grid">
-                            <div class="service-item">
-                                <i class="fas fa-user-md fa-3x"></i> <!-- Icon for Individual Therapy -->
-                                <h3>Individual Therapy</h3>
-                                <p>Helping you overcome personal challenges and improve mental health with personalized
-                                    one-on-one sessions.</p>
-                            </div>
-                            <div class="service-item">
-                                <i class="fas fa-users fa-3x"></i> <!-- Icon for Group Therapy -->
-                                <h3>Group Therapy</h3>
-                                <p>Gain support from others in a safe, therapeutic group setting where shared
-                                    experiences foster healing.</p>
-                            </div>
-                            <div class="service-item">
-                                <i class="fas fa-heart fa-3x"></i> <!-- Icon for Couples Counseling -->
-                                <h3>Couples Counseling</h3>
-                                <p>Strengthen your relationship through counseling that fosters communication and deeper
-                                    connection.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>Hi, I'm Iren Trofimova, a dedicated psychology consultant with over a decade of experience helping individuals and couples navigate life's challenges.</p>
+                    <p>My approach to therapy is holistic, focusing on emotional resilience and well-being. I offer personalized care tailored to your unique needs in a safe, non-judgmental environment.</p>
+                </div>
             </div>
         </section>
 
-        <!-- Accreditations -->
-        <section id="accreditations">
-            <div class="container accreditations-container">
-              <div class="accreditations-icon">
-                <i class="fas fa-award fa-5x"></i> <!-- Award Icon -->
-              </div>
-              <h2>Accreditations</h2>
-              <p>
-                I am a certified member of leading psychological associations and hold advanced qualifications in specialized therapeutic techniques. My commitment to professional development ensures that I offer the highest standards of care.
-              </p>
-              <ul class="accreditations-list">
-                <li>Certified Clinical Psychologist (International Association of Clinical Psychology)</li>
-                <li>Member of the European Federation of Psychologists' Associations (EFPA)</li>
-                <li>Master’s Degree in Clinical Psychology, University of [Your University]</li>
-              </ul>
-            </div>
-          </section>
-          
-
-        <!-- Contact Section -->
-        <section id="contact">
+        <section class="services">
             <div class="container">
-                <h2>Contact Me</h2>
-                <div class="messenger-links">
-                    <a href="https://t.me/Iren_Tro" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                        <i class="fab fa-telegram fa-3x"></i>
-                        <span>Telegram</span>
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <article class="service">
+                        <div class="service-icon">👤</div>
+                        <h3>Individual Therapy</h3>
+                        <p>Personalized one-on-one sessions to help you overcome challenges and improve mental health.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon">👥</div>
+                        <h3>Group Therapy</h3>
+                        <p>Supportive group settings where shared experiences foster healing and growth.</p>
+                    </article>
+                    <article class="service">
+                        <div class="service-icon">💕</div>
+                        <h3>Couples Counseling</h3>
+                        <p>Strengthen relationships through improved communication and deeper connection.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="credentials">
+            <div class="container">
+                <div class="credentials-icon">🏆</div>
+                <h2>Professional Credentials</h2>
+                <p>Certified member of leading psychological associations with advanced qualifications in specialized therapeutic techniques.</p>
+                <ul class="credentials-list">
+                    <li>Certified Clinical Psychologist</li>
+                    <li>Member of European Federation of Psychologists' Associations (EFPA)</li>
+                    <li>Master's Degree in Clinical Psychology</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-links">
+                    <a href="https://t.me/Iren_Tro" class="contact-link" target="_blank" rel="noopener">
+                        <span class="contact-icon">📱</span>
+                        <span class="contact-text">Telegram</span>
                     </a>
-                    <a href="viber://chat?number=%2Byournumber" target="_blank" rel="noopener noreferrer"
-                        aria-label="Viber">
-                        <i class="fab fa-viber fa-3x"></i>
-                        <span>Viber</span>
-                    </a>
-                    <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp fa-3x"></i>
-                        <span>WhatsApp</span>
-                    </a>
-                    <a href="https://signal.me/#p/+yournumber" target="_blank" rel="noopener noreferrer"
-                        aria-label="Signal">
-                        <i class="fas fa-signal fa-3x"></i>
-                        <span>Signal</span>
+                    <a href="tel:+380636617040" class="contact-link">
+                        <span class="contact-icon">📞</span>
+                        <span class="contact-text">Phone</span>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Iren Trofimova. All rights reserved.</p>
-            <div class="social-media">
-                <!-- Social media icons -->
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                    <span>LinkedIn</span>
-                </a>
-            </div>
         </div>
     </footer>
 </body>
-
 </html>

@@ -1,0 +1,32 @@
+{
+  "name": "therapy-site",
+  "version": "2.0.0",
+  "description": "A modern, minimalistic landing page for Iren Trofimova, a professional psychology consultant",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000 --bind 0.0.0.0",
+    "validate": "html5validator --root . --also-check-css",
+    "lighthouse": "lighthouse http://localhost:8000 --output html --output-path ./lighthouse-report.html"
+  },
+  "keywords": [
+    "therapy",
+    "psychology",
+    "consultant",
+    "landing-page",
+    "minimalistic",
+    "responsive",
+    "accessible"
+  ],
+  "author": "Iren Trofimova",
+  "license": "All rights reserved",
+  "devDependencies": {
+    "html5validator": "^0.4.2",
+    "lighthouse": "^11.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
